@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title></title>
+
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="images/global20190301.css"/>
+    <link rel="stylesheet" type="text/css" href="images/layout20190301.css"/>
+</head>
+<body>
+<div class="top_bg">
+    <div class="top_bg_con">
+        <div class="top_bgcon_left"><a href="" target="_blank"><img src="images/fansf20190301_03.jpg"></a></div>
+        <div class="top_bgcon_right"><a href="" target="_blank"><img src="images/fansf20190301_05.jpg"></a></div>
+    </div>
+</div>
+<div class="fan_bg">
+    <div class="fan_cont">
+        <div class="tab_tit"><span><a href="" target="_blank">相关法律法规</a></span><span class="hover"><a href=""
+                                                                                                      target="_blank">网上举报需知</a></span><span><a
+                href="" target="_blank">举报查询</a></span></div>
+        <div class="tab_con tab_conlabel">
+            <h3>署名举报</h3>
+            <div class="tab_labeltit">举报人信息（注意：标有<em>*</em>的必须填写）</div>
+            <div class="tab_labelcont">
+                <div class="lableftcont">
+                    <span>姓名<em>*</em></span>
+                    <p><input name="report_name" type="text"></p>
+                </div>
+                <div class="lableftcont"><span>身份证号<em>*</em></span>
+                    <p><input name="report_idcard" type="text"></p></div>
+                <div class="lableftcont"><span>联系方式<em>*</em></span>
+                    <p><input name="report_telephone" type="text"></p></div>
+                <div class="lableftcont"><span>政治面貌<em>*</em></span>
+                    <p><select name="report_politics">
+                        <option value="请选择">请选择</option>
+                    </select></p>
+                </div>
+                <div class="lableftcont"><span>现居地址<em>*</em></span>
+                    <p><input name="report_address" type="text"></p></div>
+                <div class="lableftcont"><span>级别<em>*</em></span>
+                    <p><select name="report_level">
+                        <option value="请选择">请选择</option>
+                    </select></p>
+                </div>
+            </div>
+            <div class="tab_labeltit">被举报人(单位)信息（注意：标有<em>*</em>的必须填写）</div>
+            <div class="tab_labelcont">
+                <div class="lableftcont"><span>被举报人<em>*</em></span>
+                    <p><input name="reported_name" type="text"></p></div>
+                <div class="lableftcont"><span>单位<em>*</em></span>
+                    <p><input name="reported_unit" type="text"></p></div>
+                <div class="lableftcont"><span>职务<em>*</em></span>
+                    <p><input name="reported_position" type="text"></p></div>
+                <div class="lableftcont"><span>所在地区<em>*</em></span>
+                    <p><select name="reported_address">
+                        <option value="请选择">请选择</option>
+                    </select></p>
+                </div>
+                <div class="lableftcont"><span>级别<em>*</em></span>
+                    <p><select name="reported_level">
+                        <option value="请选择">请选择</option>
+                    </select></p>
+                </div>
+                <div class="tab_labeltit">举报正文（注意：标有<em>*</em>的必须填写）</div>
+                <div class="tab_labelcont tab_labelcontT">
+                    <div class="lableftcont"><span>标题（最多50字）<em>*</em></span>
+                        <p><input name="question_title" type="text"></p></div>
+                    <div class="lableftcont"><span>问题类别<em>*</em></span>
+                        <p><select name="question_class">
+                            <option value="请选择">请选择</option>
+                        </select></p>
+                    </div>
+                    <div class="lableftcont"><span>问题细类<em>*</em></span>
+                        <p><select name="question_subclass">
+                            <option value="请选择">请选择</option>
+                        </select></p>
+                    </div>
+                    <div class="lableftcont"><span class="alltext">主要问题<em>*</em><br/>剩余1000字</span>
+                        <p><textarea name="question_content" cols="" rows=""></textarea></p></div>
+                </div>
+                <div class="tab_labeltit">上传附件（注意：标有<em>*</em>的必须填写）</div>
+                <div class="tab_labelcont tab_labelcontB">
+                    <div class="lableftcont alltext"><span>附件<em>*</em></span>
+                        <p><input type="file"><br/><em>温馨提示：最多可同时上传 5 个文件，每个文件只允许上传2 M 大小。 附件仅限于文件名
+                            后缀为.jpg、.png、.gif、.bmp、.jpeg、.tiff、.svg的文件，禁止exe、bat等格式文件上传! </em></p>
+                    </div>
+                    <div class="lableftcont yanzm"><span>验证码<em>*</em></span>
+                        <p><input name="" type="text"><strong><img
+                                src="images/fansf220190301_07.jpg"><s>看不清，请点击图片（区分大小写）</s></strong></p>
+                    </div>
+
+                </div>
+                <div class="btnbutton"><a href="" target="_blank">提交</a><a href="" target="_blank" class="nm">重置</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer_con">
+            <div class="con_left">
+                <p><a href="" target="_blank">联系我们</a>|<a href="" target="_blank">隐私声明</a>|<a href=""
+                                                                                              target="_blank">版权保护</a>|<a
+                        href="" target="_blank">网站帮助</a>|<a href="" target="_blank">无障碍浏览</a>|<a href=""
+                                                                                                 target="_blank">友情链接</a>|<a
+                        href="" target="_blank">网站地图</a>|<a href="" target="_blank">我要去前海</a></p>
+                <p class="beiantb">粤公网安备44030502001342</p>
+            </div>
+            <div class="con_right">
+                <p>主办：深圳市前海深港现代服务业合作区管理局粤ICP备</p>
+                <p>12007387号-1 网站标识码：4403000042</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    jQuery.validator.addMethod("isIdCardNo", function (value, element) {
+        return this.optional(element) || idCardNoUtil.checkIdCardNo(value);
+    }, "请正确输入您的身份证号码");
+    //护照编号验证
+    jQuery.validator.addMethod("passport", function (value, element) {
+        return this.optional(element) || checknumber(value);
+    }, "请正确输入您的护照编号");
+
+    // 手机号码验证
+    jQuery.validator.addMethod("isMobile", function (value, element) {
+        var length = value.length;
+        var mobile = /^(((13[0-9]{1})|(15[0-9]{1}))+\d{8})$/;
+        return this.optional(element) || (length == 11 &amp;&amp; mobile.test(value));
+    }, "请正确填写您的手机号码");
+
+    $().ready(function () {
+        $("#signupForm").validate({
+            rules: {
+                report_name: "required",
+                report_idcard: {
+                    required: true,
+                    isIdCardNo: true
+                },
+                report_politics: "required",
+                report_address: "required",
+                report_level: "required",
+                reported_name: "required",
+                reported_position: "required",
+                reported_address: "required",
+                reported_level: "required",
+                question_title: "required",
+                question_class: "required",
+                question_subclass: "required",
+                question_content: "required",
+            },
+            messages: {
+                report_name: "不能为空",
+                report_idcard: {
+                    required: "不能为空",
+                    isIdCardNo: "格式不正确",
+                },
+                report_politics: "不能为空",
+                report_address: "不能为空",
+                report_level: "不能为空",
+                reported_name: "不能为空",
+                reported_position: "不能为空",
+                reported_address: "不能为空",
+                reported_level: "不能为空",
+                question_title: "不能为空",
+                question_class: "不能为空",
+                question_subclass: "不能为空",
+                question_content: "不能为空",
+            },
+            showErrors: function (errorMap, errorList) {
+                console.log(errorList[0]);
+                if (errorList.length > 0) {
+
+                    var $id = "#" + errorList[0].element.id;
+                    var msg = $($id).parents(".lableftcont").find("span").eq(0).text() + errorList[0].message;
+                }
+                alert(msg);
+
+                //if(msg!="") alert(msg);
+            },
+            onfocusout: false
+        });
+    });
+
+    checkIdCardNo: function (idCardNo) {
+//15位和18位身份证号码的基本校验
+        var check = /^\d{15}|(\d{17}(\d|x|X))$/.test(idCardNo);
+        if (!check) return false;
+//判断长度为15位或18位
+        if (idCardNo.length == 15) {
+            return idCardNoUtil.check15IdCardNo(idCardNo);
+        } else if (idCardNo.length == 18) {
+            return idCardNoUtil.check18IdCardNo(idCardNo);
+        } else {
+            return false;
+        }
+    }
+    ,
+
+    //校验15位的身份证号码
+    check15IdCardNo: function (idCardNo) {
+//15位身份证号码的基本校验
+        var check = /^[1-9]\d{7}((0[1-9])|(1[0-2]))((0[1-9])|([1-2][0-9])|(3[0-1]))\d{3}$/.test(idCardNo);
+        if (!check) return false;
+//校验地址码
+        var addressCode = idCardNo.substring(0, 6);
+        check = idCardNoUtil.checkAddressCode(addressCode);
+        if (!check) return false;
+        var birDayCode = '19' + idCardNo.substring(6, 12);
+//校验日期码
+        return idCardNoUtil.checkBirthDayCode(birDayCode);
+    }
+    ,
+
+    //校验18位的身份证号码
+    check18IdCardNo: function (idCardNo) {
+//18位身份证号码的基本格式校验
+        var check = /^[1-9]\d{5}[1-9]\d{3}((0[1-9])|(1[0-2]))((0[1-9])|([1-2][0-9])|(3[0-1]))\d{3}(\d|x|X)$/.test(idCardNo);
+        if (!check) return false;
+//校验地址码
+        var addressCode = idCardNo.substring(0, 6);
+        check = idCardNoUtil.checkAddressCode(addressCode);
+        if (!check) return false;
+//校验日期码
+        var birDayCode = idCardNo.substring(6, 14);
+        check = idCardNoUtil.checkBirthDayCode(birDayCode);
+        if (!check) return false;
+//验证校检码
+        return idCardNoUtil.checkParityBit(idCardNo);
+    }
+</script>
+
+</html>

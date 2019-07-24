@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+    <title></title>
+    <style type="text/css">
+        #div1{
+        
+            padding: 10px 20px 20px 10px;
+            background: red;
+            margin: 0 auto;
+			overflow:hidden;
+        }
+        .div2{
+            width: 100px;
+            height: 100px;
+            background: green;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" >
+    <div class="div2" ></div>
+	 <div class="div2" id="d2" style="background-color:yellow;"></div>
+	 	 <div class="div2" style="background-color:grey"></div>
+
+    </div>
+</body>
+<script>
+document.getElementById("d2").style.clear="left";
+</script>
+</html>

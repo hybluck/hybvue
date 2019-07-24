@@ -1,0 +1,46 @@
+<head>
+    <script src="jquery-1.8.2.min.js"></script>
+	    <script src="card.js"></script>
+
+</head>
+<body>
+    <div class="one">
+        我是内容我是内容我是内容我是内容我是内容我是内容我是内容<br>
+        我是内容<br>
+    </div>
+    <input style="width: 20px;  height: 20px;" type="checkbox" id="checks" onclick="checks()">
+    <b onclick="check2()">我已阅读以上条例</b>
+</body>
+<style>
+    body {
+        margin: 10px
+    }
+
+    .one {
+        width: 100px;
+        height: 100px;
+        border: 10px solid red;
+        cursor: pointer;
+        overflow: scroll;
+    }
+</style>
+<script>
+    var oDiv = document.querySelector('.one');
+    console.log(oDiv.clientHeight + ":" + oDiv.scrollWidth);
+    oDiv.onscroll = function() {
+
+        console.log(this.scrollTop + ":" + this.scrollLeft);
+        if (this.clientHeight + this.scrollTop == this.scrollHeight)
+            console.log('底部');
+    }
+
+    var oDiv = document.querySelector('.one');
+    oDiv.onclick = function(ev) {
+        var evt = ev || event;
+        console.log(evt.clientY + ":" + evt.screenX + ":" + evt.pageY);
+    }
+    function check2() {
+        $("input").trigger("click");
+    }
+
+</script>

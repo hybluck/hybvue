@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title></title>
+
+    
+     
+
+    <link rel="stylesheet" type="text/css" href="images/global20190301.css"/>
+    <link rel="stylesheet" type="text/css" href="images/layout20190301.css"/>
+</head>
+<body>
+<div class="top_bg">
+ 
+</div>
+</body>
+
+<script>
+     window.location.href="a - 副本.html";
+ 	 //获取AddDayCount天后的日期
+function GetDateStr(AddDayCount) {
+    var now = new Date();
+    now.setDate(now.getDate() + AddDayCount);
+    var year = now.getFullYear();
+    var month = now.getMonth() + 1;
+    if (month < 10)
+        month = "0" + month
+    var day = now.getDate();
+    if (day < 10)
+        day = "0" + day
+    return year + "-" + month + "-" + day;
+}
+
+alert(GetDateStr(1));
+alert(new Date("2010-08-01"));
+</script>
+
+</html>
