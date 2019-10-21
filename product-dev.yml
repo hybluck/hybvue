@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: product
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: dev
+  datasource:
+    url:  jdbc:mysql://localhost:3306/springcloud_sell?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  rabbitmq:
+    boat: 127.0.0.1
+    password: guest
+    port: 5672
+    username: guest
+  redis:
+    host: 127.0.0.1
+    port: 6379

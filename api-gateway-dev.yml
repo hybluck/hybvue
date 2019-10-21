@@ -1,0 +1,5 @@
+
+#设置后可访问application/routes接口
+management:
+  security:
+    enabled: false

@@ -1,0 +1,32 @@
+
+env: testl3
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: basic
+        readTimeout: 9000
+        connectTimeout: 9000
+girl:
+  age: 26
+  name: mo
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloud_sell?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    username: root
+    password: 123456
+
+  rabbitmq:
+    boat: 127.0.0.1
+    password: guest
+    port: 5672
+    username: guest
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+
+
